@@ -65,9 +65,14 @@ function three() {
 
 const playAudio = () => {
     const audio = document.getElementById("audio")
-
+    const button = document.getElementById("button")
     audio.loop = true
+    button.click()
+
+    button.addEventListener("click", () => {
+
     audio.play()
+})
 }
 
 window.addEventListener("load", () => {
