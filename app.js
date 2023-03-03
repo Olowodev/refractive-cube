@@ -63,19 +63,33 @@ function three() {
 }
 
 
-const playAudio = () => {
-    const audio = document.getElementById("audio")
-    const button = document.getElementById("button")
-    audio.loop = true
-    button.click()
+const audio = document.getElementById("audio")
 
-    button.addEventListener("click", () => {
-        console.log(clicked)
-    audio.play()
-})
+
+
+const playAudio = () => {
+    const button = document.getElementById("button")
+    audio.volume = 0.8
+    
+    
 }
 
-window.addEventListener("load", () => {
-    playAudio()
+audio.volume = 0.8
+
+audio.addEventListener("canplaythrough", ()=> {
+    audio.play().catch(e => {
+        window.addEventListener('click', ()=>{
+            audio.play()
+        })
+    })
 })
+
+
+
+
+
+// window.addEventListener("load", () => {
+//     playAudio()
+//     console.log('click')
+// })
 three()

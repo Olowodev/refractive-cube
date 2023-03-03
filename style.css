@@ -20,5 +20,5 @@ body {
 
   #button {
     position: absolute;
-    
+    opacity: 0;
   }
