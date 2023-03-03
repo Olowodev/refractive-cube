@@ -70,7 +70,7 @@ const playAudio = () => {
     button.click()
 
     button.addEventListener("click", () => {
-
+        console.log(clicked)
     audio.play()
 })
 }
