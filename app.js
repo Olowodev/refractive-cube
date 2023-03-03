@@ -70,5 +70,7 @@ const playAudio = () => {
     audio.play()
 }
 
+window.addEventListener("load", () => {
+    playAudio()
+})
 three()
-playAudio()
