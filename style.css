@@ -19,5 +19,6 @@ body {
   }
 
   #button {
-    display: none;
+    position: absolute;
+    
   }
