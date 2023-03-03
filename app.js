@@ -62,4 +62,13 @@ function three() {
     }
 }
 
+
+const playAudio = () => {
+    const audio = document.getElementById("audio")
+
+    audio.loop = true
+    audio.play()
+}
+
 three()
+playAudio()
